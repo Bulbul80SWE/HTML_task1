@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel reservation form</title>
+</head>
+<body>
+	<h1>Travel reservation form</h1>
+	<h3>* denotes mandatory</h3>
+
+	<form>
+		<div>
+			<label for="FirstName LastName">Full name*: </label> <br>
+			<input type="text" name="fullname" id= "fullname" required> 
+		</div> <br>
+		
+		<div>
+			<label for="Email_Address">Email address*: </label> <br>
+			<input type="email" name="email" id= "email" required> 
+		</div> <br>
+
+		<div>
+			<label for="tour package">Select Tour Package*: </label><br>
+			<Select name="tour package">
+				<option value="cox's bazar"> Cox's Bazar </option>
+				<option value="saint martin"> Saint Martin </option>
+				<option value="sajek"> Sajek </option>
+				<option value="bandarban"> Bandarban </option>
+			</Select>
+		</div> <br>
+
+		<div>
+			<label for="ad">Arrival date*: </label><br>
+			<input type="date" name="ad" id="ad">
+		</div> <br>
+
+		<div>
+			<label for="nop">Number of persons*: </label><br>
+			<input type="unknown" name="nop" id="nop" required>
+		</div> <br>
+
+		<div>
+			<label for="avail">What would you want to avail: </label><br>
+			<input type="checkbox" name="avail" id="avail" value="boarding"> Boarding <br>
+			<input type="checkbox" name="avail" id="avail" value="fooding"> Fooding <br>
+			<input type="checkbox" name="avail" id="avail" value="sight seeing"> Sight seeing 
+		</div> <br>
+
+		<div>
+			<label for="coupon code">Discount Coupon code: </label><br>
+			<input type="unknown" name="coupon code" id="coupon code">
+		</div> <br>
+
+		<div>
+			<label for="t&c">Terms and conditions*: </label><br>
+			<input type="radio" name="t&c" id="t&c" required value="agree"> I agree
+			<input type="radio" name="t&c" id="t&c" required value="disagree"> I disagree
+		</div> <br>
+
+		<div>
+			<input type="submit" value="Complete reservation">
+		</div>
+
+	</form>
+</body>
+</html>
